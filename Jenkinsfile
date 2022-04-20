@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Welcome to AWS') {
             steps {
-                sh 'aws s3 ls --profile dev'
+                sh 'AWS_PROFILE=dev terraform init'
             }
         }
     }
