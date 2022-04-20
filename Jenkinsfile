@@ -34,7 +34,7 @@ pipeline {
             }
             steps {
                 sh 'AWS_PROFILE=uat terraform init'
-                sh 'AWS_PROFILE=uat terraform destory --auto-approve'
+                sh 'AWS_PROFILE=uat terraform destroy --auto-approve'
             }
         }
     }
